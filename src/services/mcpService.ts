@@ -191,17 +191,17 @@ function registerCustomPrompts(server: McpServer) {
     "用于生成Element Plus组件的提示模板", // 描述
     // 定义模板参数类型
     {
-      description: z.string().describe("详细描述组件的功能和需求"),
+      description: z.string().describe("详细描述组件的功能和需求") as any,
       componentType: z
         .string()
         .optional()
-        .describe("组件的类型（如表格、表单等）"),
-      stylePreference: z.string().optional().describe("组件的样式偏好"),
+        .describe("组件的类型（如表格、表单等）") as any,
+      stylePreference: z.string().optional().describe("组件的样式偏好") as any,
       // MCP的prompt只支持字符串类型参数，所以这里使用字符串，并在处理时进行解析
       featuresStr: z
         .string()
         .optional()
-        .describe("组件必须实现的功能列表，用逗号分隔"),
+        .describe("组件必须实现的功能列表，用逗号分隔") as any,
     },
     // 提示模板生成函数
     async (
@@ -221,8 +221,8 @@ function registerCustomPrompts(server: McpServer) {
       if (featuresStr) {
         const features = featuresStr
           .split(",")
-          .map((f) => f.trim())
-          .filter((f) => f);
+          .map((f: string) => f.trim())
+          .filter((f: string) => f);
         if (features.length > 0) {
           promptText += `\n必需功能:\n`;
           for (const feature of features) {

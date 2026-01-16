@@ -49,8 +49,14 @@ mcp-configs/
 PUBLISH.md
 CURSOR_SETUP.md
 .cursor-mcp-config.json
+MIGRATION_SUMMARY.md
+NEXT_STEPS.md
+TRANSFORMATION_COMPLETE.md
 
 # Lock files (users will install with their own)
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Tarball
+*.tgz
