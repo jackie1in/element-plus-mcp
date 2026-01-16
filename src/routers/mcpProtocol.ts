@@ -1,9 +1,9 @@
 import Router from "koa-router";
 import type { ParameterizedContext } from "koa";
-import { MCPAdapter } from "../services/mcpAdapter";
-import { createMCPServer, createSSETransport } from "../services/mcpService";
-import { MCPHttpHandler } from "../services/mcpHttpHandler";
-import { LLMConfig } from "../services/llmService";
+import { MCPAdapter } from "../services/mcpAdapter.js";
+import { createMCPServer, createSSETransport } from "../services/mcpService.js";
+import { MCPHttpHandler } from "../services/mcpHttpHandler.js";
+import { LLMConfig } from "../services/llmService.js";
 
 // 创建MCP服务器实例
 const mcpServer = createMCPServer();

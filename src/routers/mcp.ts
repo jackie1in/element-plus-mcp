@@ -1,9 +1,9 @@
 import Router from "koa-router";
 import type { ParameterizedContext } from "koa";
-import { generateComponent } from "../services/componentFilter";
-import { fixCode } from "../services/codeFixer";
-import { PreviewService } from "../services/previewService";
-import { LLMConfig, LLMModelType } from "../services/llmService";
+import { generateComponent } from "../services/componentFilter.js";
+import { fixCode } from "../services/codeFixer.js";
+import { PreviewService } from "../services/previewService.js";
+import { LLMConfig, LLMModelType } from "../services/llmService.js";
 
 const router = new Router();
 

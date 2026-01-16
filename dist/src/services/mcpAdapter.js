@@ -1,4 +1,4 @@
-import { generateComponent } from './componentFilter';
+import { generateComponent } from './componentFilter.js';
 import { GenerateComponentTool } from '../tools/generate-component-tool.js';
 /**
  * MCP适配器 - HTTP API 的简化包装层

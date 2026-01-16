@@ -1,5 +1,5 @@
-import { LLMConfig } from './llmService';
-import { generateComponent } from './componentFilter';
+import { LLMConfig } from './llmService.js';
+import { generateComponent } from './componentFilter.js';
 import { GenerateComponentTool } from '../tools/generate-component-tool.js';
 
 /**

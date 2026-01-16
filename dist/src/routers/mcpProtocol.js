@@ -1,7 +1,7 @@
 import Router from "koa-router";
-import { MCPAdapter } from "../services/mcpAdapter";
-import { createMCPServer, createSSETransport } from "../services/mcpService";
-import { MCPHttpHandler } from "../services/mcpHttpHandler";
+import { MCPAdapter } from "../services/mcpAdapter.js";
+import { createMCPServer, createSSETransport } from "../services/mcpService.js";
+import { MCPHttpHandler } from "../services/mcpHttpHandler.js";
 // 创建MCP服务器实例
 const mcpServer = createMCPServer();
 const mcpAdapter = new MCPAdapter();

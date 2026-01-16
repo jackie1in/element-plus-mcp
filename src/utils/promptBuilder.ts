@@ -1,4 +1,4 @@
-import fullComponents from "../../data/element-plus-components.json";
+import fullComponents from "../../data/element-plus-components.json" with { type: "json" };
 
 export function buildPrompt(
   userPrompt: string,

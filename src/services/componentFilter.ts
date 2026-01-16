@@ -1,6 +1,6 @@
-import { callLLM, LLMConfig } from "./llmService";
-import { buildPrompt } from "../utils/promptBuilder";
-import { CacheService } from "./cacheService";
+import { callLLM, LLMConfig } from "./llmService.js";
+import { buildPrompt } from "../utils/promptBuilder.js";
+import { CacheService } from "./cacheService.js";
 
 interface LLMComponentResponse {
   component: string;

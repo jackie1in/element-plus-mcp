@@ -1,5 +1,5 @@
 import Router from "koa-router";
-import { PreviewService } from "../services/previewService";
+import { PreviewService } from "../services/previewService.js";
 const router = new Router();
 const previewService = PreviewService.instance;
 router.get("/get/:id", async (ctx) => {

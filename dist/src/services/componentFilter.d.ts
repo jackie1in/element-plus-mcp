@@ -1,4 +1,4 @@
-import { LLMConfig } from "./llmService";
+import { LLMConfig } from "./llmService.js";
 /**
  * 生成组件
  * @param userPrompt 用户提示

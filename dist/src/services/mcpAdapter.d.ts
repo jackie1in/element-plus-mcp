@@ -1,4 +1,4 @@
-import { LLMConfig } from './llmService';
+import { LLMConfig } from './llmService.js';
 /**
  * MCP适配器 - HTTP API 的简化包装层
  *

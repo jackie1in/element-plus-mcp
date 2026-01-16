@@ -1,6 +1,6 @@
 import Router from "koa-router";
-import { generateComponent } from "../services/componentFilter";
-import { PreviewService } from "../services/previewService";
+import { generateComponent } from "../services/componentFilter.js";
+import { PreviewService } from "../services/previewService.js";
 const router = new Router();
 /**
  * 生成组件的路由处理器

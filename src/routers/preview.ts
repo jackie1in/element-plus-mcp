@@ -1,6 +1,6 @@
 import Router from "koa-router";
 import type { Context } from "koa";
-import { PreviewService } from "../services/previewService";
+import { PreviewService } from "../services/previewService.js";
 
 const router = new Router();
 const previewService = PreviewService.instance;

@@ -1,9 +1,9 @@
 import { IncomingMessage, ServerResponse } from "http";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { createMCPServer } from "./mcpService";
-import { generateComponent } from "./componentFilter";
-import { fixCode } from "./codeFixer";
-import { PreviewService } from "./previewService";
+import { createMCPServer } from "./mcpService.js";
+import { generateComponent } from "./componentFilter.js";
+import { fixCode } from "./codeFixer.js";
+import { PreviewService } from "./previewService.js";
 
 /**
  * MCP HTTP处理器

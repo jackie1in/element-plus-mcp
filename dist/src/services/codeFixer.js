@@ -1,4 +1,4 @@
-import { fixVueCode } from '../utils/ast';
+import { fixVueCode } from '../utils/ast.js';
 /**
  * 修复代码
  * @param rawCode 原始代码

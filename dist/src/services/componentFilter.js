@@ -1,6 +1,6 @@
-import { callLLM } from "./llmService";
-import { buildPrompt } from "../utils/promptBuilder";
-import { CacheService } from "./cacheService";
+import { callLLM } from "./llmService.js";
+import { buildPrompt } from "../utils/promptBuilder.js";
+import { CacheService } from "./cacheService.js";
 // 创建专用的组件生成缓存实例
 const componentGenerationCache = new CacheService(100, 3600000); // 缓存100个结果，1小时过期
 /**

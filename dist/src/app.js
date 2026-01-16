@@ -1,9 +1,9 @@
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
 import Router from "koa-router";
-import mcpRoutes from "./routers/mcp";
-import mcpProtocolRoutes from "./routers/mcpProtocol";
-import previewRoutes from "./routers/preview";
+import mcpRoutes from "./routers/mcp.js";
+import mcpProtocolRoutes from "./routers/mcpProtocol.js";
+import previewRoutes from "./routers/preview.js";
 export function createServer() {
     const app = new Koa();
     const router = new Router();
