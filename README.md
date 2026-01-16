@@ -1,6 +1,65 @@
-# element-plus-mcp
-element-plush mcp server
+# Element Plus MCP Server
 
+Element Plus MCP Server 是一个基于 Model Context Protocol (MCP) 的服务器，让 AI 助手能够智能生成和管理 Element Plus 组件。
+
+## 🚀 快速开始
+
+### 通过 MCP 配置使用（推荐）
+
+这是一个**标准 MCP 服务器**，无需配置 API Key！
+
+在你的 MCP 客户端配置文件中添加：
+
+```json
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "npx",
+      "args": ["-y", "element-plus-mcp"]
+    }
+  }
+}
+```
+
+或从 GitHub 直接运行：
+
+```json
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "npx",
+      "args": ["-y", "github:yourusername/element-plus-mcp"]
+    }
+  }
+}
+```
+
+本地开发模式：
+
+```json
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "node",
+      "args": ["/Users/linhai/element-plus-mcp/dist/start-mcp.js"]
+    }
+  }
+}
+```
+
+详细配置说明请查看：
+- [SIMPLE_MCP_CONFIG.md](./SIMPLE_MCP_CONFIG.md) - 标准 MCP 配置（推荐）⭐
+- [MCP_SETUP.md](./MCP_SETUP.md) - 详细配置指南
+- [QUICKSTART.md](./QUICKSTART.md) - 5 分钟快速开始
+
+## ✨ 功能特性
+
+- 🎯 提供 Element Plus 组件生成工具
+- 📚 提供完整的组件库文档和 API 参考
+- 🔍 提供组件查询和资源访问
+- 🎨 支持自定义提示词模板
+- 🔌 标准 MCP 协议，兼容所有 MCP 客户端
+- 🚀 无需配置 API Key，开箱即用
 
 ### 基本使用
 

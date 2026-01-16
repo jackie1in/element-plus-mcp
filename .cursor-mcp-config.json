@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "node",
+      "args": [
+        "/Users/linhai/element-plus-mcp/dist/start-mcp.js"
+      ]
+    }
+  }
+}

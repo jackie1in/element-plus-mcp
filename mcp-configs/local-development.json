@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/element-plus-mcp/dist/start-mcp.js"
+      ]
+    }
+  }
+}

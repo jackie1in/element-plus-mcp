@@ -1,0 +1,56 @@
+# Source files
+src/
+tests/
+docs/
+scripts/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+.env
+.env.*
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules/
+
+# Test files
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Old files
+start-mcp.js
+
+# Docs
+docs/
+tests/
+mcp-configs/
+PUBLISH.md
+CURSOR_SETUP.md
+.cursor-mcp-config.json
+
+# Lock files (users will install with their own)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

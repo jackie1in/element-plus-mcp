@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "element-plus-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:yourusername/element-plus-mcp"
+      ]
+    }
+  }
+}

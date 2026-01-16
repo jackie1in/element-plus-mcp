@@ -1,9 +1,38 @@
 {
   "name": "element-plus-mcp",
+  "version": "1.0.0",
+  "description": "Element Plus MCP Server - Generate Vue components with Element Plus through Model Context Protocol",
   "type": "module",
+  "bin": {
+    "element-plus-mcp": "./dist/start-mcp.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "data",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/element-plus-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "element-plus",
+    "vue",
+    "component-generator"
+  ],
+  "author": "",
+  "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "mcp": "node start-mcp.js",
+    "build": "tsc && node scripts/postbuild.js",
+    "prepublishOnly": "npm run build",
+    "mcp": "node dist/start-mcp.js",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
